@@ -50,11 +50,8 @@
                                     Delete
                                 </a>
 
-                                <form method="post" asp-for="@obj.Id" asp-action="DeletePost2">
-                                    <input asp-for="Id" hidden>
-                                    <a input type="submit" asp-controller="Animal" asp-route-Id="@obj.Id" asp-action="DeletePost" class="btn btn-danger mx-2">
-                                        DeletePost2notworking
-                                    </a>
+                                <form method="post" asp-for="@obj.Id" asp-route-Id="@obj.Id" asp-action="DeletePost2">
+                                    <input type="submit" class="btn btn-danger w-100" value="INSTA Delete" />
                                 </form>
 
 
