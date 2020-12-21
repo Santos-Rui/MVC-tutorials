@@ -43,10 +43,12 @@ namespace MVVMv2.Controllers
 
         //POST - CREATE
         [HttpPost]
-        public IActionResult Create(Animal anim) { 
-            _db.Animal.Add(anim);
-            _db.SaveChanges();
-            return RedirectToAction("Index");
+        public IActionResult Create(Animal anim) {
+
+                _db.Animal.Add(anim);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+
         }
 
 
@@ -66,9 +68,13 @@ namespace MVVMv2.Controllers
         [HttpPost]
         public IActionResult Edit(Animal ani)
         {
-            _db.Animal.Update(ani);
-            _db.SaveChanges();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _db.Animal.Update(ani);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
         }
 
 

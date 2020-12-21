@@ -9,6 +9,7 @@ namespace MVVMv2.Models
     public class Animal
     {
         [Key]
+        [Required]
         public int Id { get; set; }
 
         [Required]
