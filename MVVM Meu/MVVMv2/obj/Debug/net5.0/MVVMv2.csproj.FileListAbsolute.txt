@@ -433,3 +433,4 @@ C:\Users\Portátil_14\source\repos\MVVMv2\MVVMv2\bin\Debug\net5.0\Microsoft.AspN
 C:\Users\Portátil_14\source\repos\MVVMv2\MVVMv2\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Users\Portátil_14\source\repos\MVVMv2\MVVMv2\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Portátil_14\source\repos\MVVMv2\MVVMv2\obj\Debug\net5.0\MVVMv2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Portátil_14\source\repos\MVVMv2\MVVMv2\obj\Debug\net5.0\Razor\Views\Animal\Search.cshtml.g.cs

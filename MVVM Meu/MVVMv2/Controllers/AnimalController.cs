@@ -25,13 +25,26 @@ namespace MVVMv2.Controllers
         public IActionResult Index()
         {
             IEnumerable<Animal> aniList = _db.Animal;
-            //_viewModel.setList(aniList);  //em vez de methods no original crio um novo?
+            
+
             AnimalViewModel vm = new AnimalViewModel(aniList);
             return View(vm);
         }
 
 
+        //GET - SEARCH
+        public IActionResult Search(string searchString)
+        {
+            var animais = from m in _db.Animal
+                         select m;
+            animais = animais.Where(s => s.Name.Contains(searchString));
 
+
+
+
+            AnimalViewModel vm = new AnimalViewModel(animais);
+            return View(vm);
+        }
 
 
 

@@ -1,19 +1,25 @@
 ﻿@model MVVMv2.ViewModel.AnimalViewModel
 
 
-
 <div class=" = " container p-3"">
     <div class="row pt-4">
 
-        <div class="col-6">
+        <div class="col-5">
             <h2 class="text-primary"> Animal List</h2>
         </div>
-        <div class="col-6 text-right">
+        <div class="col-3 text-right">
             <a asp-controller="Animal" asp-action="Create" class="btn btn-primary">
                 Register new Animal
-
             </a>
         </div>
+        <form col-3 asp-controller="Animal" asp-action="Search">
+            <p>
+                Title: <input type="text" name="SearchString">
+                <input type="submit" value="Filter" />
+            </p>
+        </form>
+
+
     </div>
 
     <br /> <br />
@@ -64,6 +70,7 @@
 
             </tbody>
         </table>
+      
     }
     else
     {
