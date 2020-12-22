@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MVVMv2.Data;
 using MVVMv2.Models;
 using MVVMv2.ViewModel;
@@ -21,15 +22,44 @@ namespace MVVMv2.Controllers
             _viewModel = vm;
         }
 
-        //GET - INDEX
-        public IActionResult Index()
-        {
-            IEnumerable<Animal> aniList = _db.Animal;
-            
 
-            AnimalViewModel vm = new AnimalViewModel(aniList);
-            return View(vm);
-        }
+
+        //GET - INDEX - Default
+        public IActionResult Index() => View(new AnimalViewModel(_db.Animal));
+        //{
+        //    IEnumerable<Animal> aniList = 
+
+
+        //    AnimalViewModel vm = new AnimalViewModel(aniList);
+        //    return (vm);
+        //}
+
+
+        ////GET - INDEX - async
+        //public async Task<ActionResult<IEnumerable<Animal>>> Index()
+        //{
+        //    IEnumerable<Animal> aniList = await  _db.Animal.ToListAsync();
+
+
+        //    AnimalViewModel vm = new AnimalViewModel(aniList);
+        //    return View(vm);
+        //}
+
+
+
+        ////GET - INDEX - Default
+        //public IActionResult Index()
+        //{
+        //    IEnumerable<Animal> aniList = _db.Animal;
+
+
+        //    AnimalViewModel vm = new AnimalViewModel(aniList);
+        //    return View(vm);
+        //}
+
+
+
+
 
 
         //GET - SEARCH

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f+YxabpI/EG40lAsS/cLOfXvwsWqppSPe89ugwTJ0L/pT+EMITLhPgHc0mv9BbKn6b2BT6Y3+G++fxD22ih5Ug==",
+  "dgSpecHash": "Ph6XOPLwqBwxBrG/G4e7PasLoh5P2QB4JE5sgh9OK9P2/dKA4HdOgtYbSmWx4vs6y8IflLCFX/T00awjh2PpJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Portátil_14\\Desktop\\MVCTuts\\MVC-tutorials\\MVVMSample\\MVVMSample\\MVVMSample.csproj",
+  "projectFilePath": "C:\\Users\\Portátil_14\\source\\repos\\MVVMSample\\MVVMSample\\MVVMSample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Portátil_14\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Portátil_14\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

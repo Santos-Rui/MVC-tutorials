@@ -9,5 +9,7 @@ namespace MVVMSample.ReposInterface
     public interface IProductRepository
     {
         List<Product> Get();
+
+        List<Product> Search(ProductSearch entity);
     }
 }

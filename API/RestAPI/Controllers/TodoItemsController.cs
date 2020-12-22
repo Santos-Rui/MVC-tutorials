@@ -20,19 +20,20 @@ namespace RestAPI.Controllers
             _context = context;
         }
 
-        // GET: api/TodoItems
+        //// GET: api/TodoItems original
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
         {
             return await _context.TodoItems.ToListAsync();
         }
 
+        //
 
-        //// GET: api/TodoItems
+        // GET: api/TodoItems
         //[HttpGet]
-        //public  Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
+        //public IEnumerable<TodoItem> GetTodoItems()
         //{
-        //    return  _context.TodoItems.ToListAsync();
+        //    return _context.TodoItems;
         //}
 
 
@@ -50,6 +51,9 @@ namespace RestAPI.Controllers
 
             return todoItem;
         }
+
+
+
 
         // PUT: api/TodoItems/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -82,6 +86,16 @@ namespace RestAPI.Controllers
             return NoContent();
         }
 
+
+
+
+
+
+
+
+
+
+
         // POST: api/TodoItems
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -92,6 +106,13 @@ namespace RestAPI.Controllers
 
             return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
         }
+
+
+
+
+
+
+
 
         // DELETE: api/TodoItems/5
         [HttpDelete("{id}")]

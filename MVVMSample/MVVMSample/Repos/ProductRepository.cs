@@ -21,5 +21,15 @@ namespace MVVMSample.Repos
         {
             return DbContext.Products.ToList();
         }
+
+        public List<Product> Search(ProductSearch entity)
+        {
+            List<Product> ret;
+
+            // Perform Searching  
+            ret = DbContext.Products.Where(p => (entity.Name == null || p.Name.StartsWith(entity.Name)) && p.ListPrice >= entity.ListPrice).ToList();
+            return ret;
+        }
+
     }
 }

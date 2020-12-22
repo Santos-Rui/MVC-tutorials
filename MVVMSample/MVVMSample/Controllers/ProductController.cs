@@ -25,5 +25,12 @@ namespace MVVMSample.Controllers
             _viewModel.HandleRequest();
             return View(_viewModel);
         }
+
+        [HttpPost]
+        public IActionResult DeleteProduct(int id)
+        {
+            _viewModel.HandleRequest();
+            return View(_viewModel);
+        }
     }
 }

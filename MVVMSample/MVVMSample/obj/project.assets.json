@@ -8688,11 +8688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Portátil_14\\Desktop\\MVCTuts\\MVC-tutorials\\MVVMSample\\MVVMSample\\MVVMSample.csproj",
+      "projectUniqueName": "C:\\Users\\Portátil_14\\source\\repos\\MVVMSample\\MVVMSample\\MVVMSample.csproj",
       "projectName": "MVVMSample",
-      "projectPath": "C:\\Users\\Portátil_14\\Desktop\\MVCTuts\\MVC-tutorials\\MVVMSample\\MVVMSample\\MVVMSample.csproj",
+      "projectPath": "C:\\Users\\Portátil_14\\source\\repos\\MVVMSample\\MVVMSample\\MVVMSample.csproj",
       "packagesPath": "C:\\Users\\Portátil_14\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Portátil_14\\Desktop\\MVCTuts\\MVC-tutorials\\MVVMSample\\MVVMSample\\obj\\",
+      "outputPath": "C:\\Users\\Portátil_14\\source\\repos\\MVVMSample\\MVVMSample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Portátil_14\\AppData\\Roaming\\NuGet\\NuGet.Config",
