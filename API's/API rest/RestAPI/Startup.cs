@@ -34,6 +34,7 @@ namespace RestAPI
                 )       
             );
             services.AddScoped<TodoItem>();
+            services.AddScoped<GlossaryItem>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -57,6 +58,7 @@ namespace RestAPI
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
